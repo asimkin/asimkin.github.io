@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anatoly Simkin — репозитории</title>
+<meta name="description" content="Анатолий Симкин — личная страница и публичные репозитории на GitHub">
+<style>
+:root {
+  --bg: #ffffff; --fg: #1f2328; --muted: #656d76; --card: #ffffff;
+  --line: #d0d7de; --accent: #0969da; --chip: #f6f8fa;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0d1117; --fg: #e6edf3; --muted: #8b949e; --card: #161b22;
+           --line: #30363d; --accent: #58a6ff; --chip: #21262d; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.wrap { max-width: 62rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+header { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; margin-bottom: 3rem; }
+.avatar { width: 96px; height: 96px; border-radius: 50%; border: 1px solid var(--line); }
+h1 { margin: 0 0 .25rem; font-size: 1.75rem; letter-spacing: -.01em; }
+.role { margin: 0; color: var(--muted); }
+.links { margin-top: .75rem; display: flex; gap: 1rem; flex-wrap: wrap; font-size: .95rem; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+section { margin-bottom: 3rem; }
+h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em;
+     color: var(--muted); font-weight: 600; margin: 0 0 1rem;
+     padding-bottom: .5rem; border-bottom: 1px solid var(--line); }
+.grid { list-style: none; margin: 0; padding: 0; display: grid; gap: .75rem;
+        grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+        padding: .9rem 1rem; display: flex; flex-direction: column; gap: .4rem; }
+.card-head { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+.repo { font-weight: 600; font-size: 1rem; }
+.desc { margin: 0; font-size: .9rem; color: var(--fg); opacity: .9; }
+.muted { color: var(--muted); }
+.meta { margin-top: auto; padding-top: .4rem; display: flex; align-items: center;
+        gap: .4rem; font-size: .82rem; color: var(--muted); }
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.dot-sep { opacity: .6; }
+.stars { font-size: .82rem; color: var(--muted); }
+.tag { font-size: .7rem; text-transform: uppercase; letter-spacing: .05em;
+       background: var(--chip); color: var(--muted); border-radius: 999px;
+       padding: .1rem .5rem; border: 1px solid var(--line); }
+footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
+         font-size: .85rem; color: var(--muted); display: flex; justify-content: space-between;
+         gap: 1rem; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="avatar" src="https://avatars.githubusercontent.com/u/5076305?v=4" alt="Аватар" width="96" height="96">
+    <div>
+      <h1>Анатолий Симкин</h1>
+      <p class="role">Продукт и инфраструктура · Москва</p>
+      <div class="links">
+        <a href="https://github.com/asimkin" target="_blank" rel="noopener">github.com/asimkin</a>
+        <a href="http://ru.linkedin.com/in/asimkin/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+    <section>
+      <h2>Сейчас</h2>
+      <ul class="grid">
+      <li class="card">
+        <div class="card-head">
+          <a class="repo" href="https://github.com/asimkin/dsh-tool-scope" target="_blank" rel="noopener">dsh-tool-scope</a>
+          
+        </div>
+        <p class="desc">Per-agent tool restriction for DeepSeek Harness (dsh) role subagents: cuts the inherited tool schema from ~28k to ~0.6-2.4k tokens per role.</p>
+        <div class="meta"><span class="dot" style="background:#f1e05a"></span>JavaScript<span class="dot-sep">·</span><span class="muted">обновлён 2026</span></div>
+      </li>
+      <li class="card">
+        <div class="card-head">
+          <a class="repo" href="https://github.com/asimkin/mifit2zepp" target="_blank" rel="noopener">mifit2zepp</a>
+          
+        </div>
+        <p class="desc">Transfer trainings from Mi Fitness export to csv to Zepp</p>
+        <div class="meta"><span class="dot" style="background:#3572A5"></span>Python<span class="dot-sep">·</span><span class="muted">обновлён 2026</span></div>
+      </li>
+      <li class="card">
+        <div class="card-head">
+          <a class="repo" href="https://github.com/asimkin/20090201_DiplomaRecognition" target="_blank" rel="noopener">20090201_DiplomaRecognition</a>
+          <span class="stars">★ 3</span>
+        </div>
+        <p class="desc">The source code of BSc research in 2009 of vehicle license plates recognition</p>
+        <div class="meta"><span class="dot" style="background:#E3F171"></span>Pascal<span class="dot-sep">·</span><span class="muted">обновлён 2026</span></div>
+      </li>
+      <li class="card">
+        <div class="card-head">
+          <a class="repo" href="https://github.com/asimkin/find_my_photo" target="_blank" rel="noopener">find_my_photo</a>
+          
+        </div>
+        <p class="desc muted">Без описания</p>
+        <div class="meta"><span class="dot" style="background:#3572A5"></span>Python<span class="dot-sep">·</span><span class="muted">обновлён 2026</span></div>
+      </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Форки</h2>
+      <ul class="grid">
+      <li class="card">
+        <div class="card-head">
+          <a class="repo" href="https://github.com/asimkin/deepseek-harness" target="_blank" rel="noopener">deepseek-harness</a>
+          <span class="tag">fork</span>
+        </div>
+        <p class="desc">DeepSeek Harness: Everything is a Plugin.</p>
+        <div class="meta"><span class="dot-sep">·</span><span class="muted">обновлён 2026</span></div>
+      </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Ранние проекты, 2006–2010</h2>
+      <ul class="grid">
+      <li class="card">
+        <div class="card-head">
+          <a class="repo" href="https://github.com/asimkin/20100120_DragonsApacheServer" target="_blank" rel="noopener">20100120_DragonsApacheServer</a>
+          <span class="stars">★ 1</span>
+        </div>
+        <p class="desc">Create build «Dragons Apache Server» for development and testing web sites</p>
+        <div class="meta"><span class="dot" style="background:#0298c3"></span>Perl<span class="dot-sep">·</span><span class="muted">обновлён 2014</span></div>
+      </li>
+      <li class="card">
+        <div class="card-head">
+          <a class="repo" href="https://github.com/asimkin/20091201_Interpolation" target="_blank" rel="noopener">20091201_Interpolation</a>
+          
+        </div>
+        <p class="desc">Research and development the software for image interpolation</p>
+        <div class="meta"><span class="dot" style="background:#E3F171"></span>Pascal<span class="dot-sep">·</span><span class="muted">обновлён 2014</span></div>
+      </li>
+      <li class="card">
+        <div class="card-head">
+          <a class="repo" href="https://github.com/asimkin/20070901_FlashBlogEngine" target="_blank" rel="noopener">20070901_FlashBlogEngine</a>
+          
+        </div>
+        <p class="desc">This ambitious project has been focused on the development CMS for blogs based-on Flash technology. Anatoly released beta version of the product (rss-reader with navigation by tag…</p>
+        <div class="meta"><span class="dot" style="background:#563d7c"></span>CSS<span class="dot-sep">·</span><span class="muted">обновлён 2014</span></div>
+      </li>
+      <li class="card">
+        <div class="card-head">
+          <a class="repo" href="https://github.com/asimkin/20070301_NetworkUsersMap" target="_blank" rel="noopener">20070301_NetworkUsersMap</a>
+          
+        </div>
+        <p class="desc">This project was designed for LAN users to demonstrate where the user been on the map. The project was designed by flash-technology using xml-files, allowing to update the map int…</p>
+        <div class="meta"><span class="dot-sep">·</span><span class="muted">обновлён 2014</span></div>
+      </li>
+      <li class="card">
+        <div class="card-head">
+          <a class="repo" href="https://github.com/asimkin/20060401_CatchBall" target="_blank" rel="noopener">20060401_CatchBall</a>
+          <span class="stars">★ 1</span>
+        </div>
+        <p class="desc">This game was developed to study the object-oriented environment Delphi 7 at MSTU n.a. N.E. Bauman. &quot;Catch Ball&quot; is a mix of gameplay of Arkanoid and ping-pong games. It was devel…</p>
+        <div class="meta"><span class="dot" style="background:#E3F171"></span>Pascal<span class="dot-sep">·</span><span class="muted">обновлён 2014</span></div>
+      </li>
+      </ul>
+    </section>
+
+  <footer>
+    <span>Собрано 25.11.2026 · данные из GitHub API</span>
+    <a href="https://github.com/asimkin?tab=repositories" target="_blank" rel="noopener">Все репозитории</a>
+  </footer>
+</div>
+</body>
+</html>
