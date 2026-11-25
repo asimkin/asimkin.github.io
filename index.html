@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slides MCP — personal tool</title>
+<style>
+:root { color-scheme: light dark; }
+body { font: 16px/1.6 -apple-system, Segoe UI, Roboto, sans-serif; max-width: 46rem; margin: 3rem auto; padding: 0 1.25rem; }
+h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+h2 { font-size: 1.15rem; margin-top: 2rem; }
+code { background: rgba(127,127,127,.15); padding: .1em .35em; border-radius: 4px; }
+.lead { color: #666; margin-top: 0; }
+nav a { margin-right: 1rem; }
+footer { margin-top: 3rem; font-size: .875rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Slides MCP</h1>
+<p class="lead">Личный инструмент для работы с Google Slides через MCP.</p>
+
+<p><strong>Slides MCP</strong> — локальное приложение, которое запускается на компьютере владельца аккаунта
+и даёт AI-агенту читать и править презентации Google Slides через официальный Google Slides API.
+Приложение не является сервисом: у него нет сервера, нет регистрации и нет других пользователей.</p>
+
+<h2>Что делает</h2>
+<ul>
+  <li>читает структуру и текст презентаций, доступных владельцу аккаунта;</li>
+  <li>вносит правки — текст, фигуры, таблицы, изображения, заметки докладчика;</li>
+  <li>по запросу выгружает презентацию в PDF или PPTX.</li>
+</ul>
+
+<h2>Как обращается с данными</h2>
+<p>Токен доступа Google хранится только локально, в файле с правами владельца
+(<code>~/.config/mcp-google-slides/credentials.json</code>). Содержимое презентаций никуда не
+передаётся, кроме запросов к API Google от имени владельца аккаунта. Подробнее — в
+<a href="./privacy.html">политике конфиденциальности</a>.</p>
+
+<nav>
+  <a href="./privacy.html">Политика конфиденциальности</a>
+  <a href="./terms.html">Условия использования</a>
+</nav>
+
+<footer>Владелец: Anatoly Simkin · <a href="mailto:simkin.av.work@gmail.com">simkin.av.work@gmail.com</a></footer>
+</body>
+</html>
